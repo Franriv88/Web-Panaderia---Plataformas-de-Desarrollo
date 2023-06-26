@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+
+<main aria-labelledby="title">
+    <form class="row g-3">
+        <div class="col-md-6">
+            <label for="inputName" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="inputNombre" required>
+        </div>
+        <div class="col-md-6">
+            <label for="inputLasName" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="inputLastName" required>
+        </div>
+        <div class="col-2">
+            <label for="inputCellphone" class="form-label">Teléfono</label>
+            <input type="text" class="form-control" id="inputCellphone" placeholder="+54 9 11 12345678">
+        </div>
+        <div class="col-12">
+            <div class="col-md-5">
+                <label for="inputDocument" class="form-label">Ingrese nro de documento</label>
+                <div class="col-6">
+                    <label class="visually-hidden" for="autoSizingSelect">Documento</label>
+                    <input type="text" class="form-control" id="inputDocument" placeholder="12345678" required>
+                </div>
+                <div class="col-6">
+                    <select class="form-select" id="autoSizingSelect" required>
+                        <option selected>Tipo de Documento</option>
+                        <option value="1">DNI</option>
+                        <option value="2">Pasaporte</option>
+                        <option value="3">Otro</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div></div>
+                
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <label for="inputPassword" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="inputPassword" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="inputConfirmPassword" class="form-label">Confirmar Contraseña</label>
+                        <input type="password" class="form-control" id="inputConfirmPassword" required>
+                    </div>
+                </div>
+            
+        <div class="col-md-2">
+            <label for="inputLocalidad" class="form-label">Localidad</label >
+            <select id="inputLocalidad" class="form-select" required>
+                <option selected>...</option>
+                <option value="1">Almagro</option>
+                <option value="2">Belgrano</option>
+                <option value="3">Caballito</option>
+                <option value="3">Villa Crespo</option>
+            </select>
+        </div>
+        <div class="col-2">
+            <label for="inputCalle" class="form-label">Calle</label>
+            <input type="text" class="form-control" id="inputCalle" placeholder="Av Gaona" required>
+        </div>
+        <div class="col-2">
+            <label for="inputAltura" class="form-label">Altura</label>
+            <input type="text" class="form-control" id="inputAltura" placeholder="1234" required>
+        </div>
+        <div class="col-2">
+            <label for="inputDpto" class="form-label">Piso/Dpto</label>
+            <input type="text" class="form-control" id="inputDpto" placeholder="7A" required>
+        </div>
+        <div class="col-2">
+            <label for="inputZip" class="form-label">Código Postal</label>
+            <input type="text" class="form-control" id="inputZip" placeholder="1403">
+        </div>
+        <div class="col-12">
+            <label for="inputAddress2" class="form-label">¿Alún punto de referencia u observación?</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Esquina... / No funciona intercomunicador / Llamarme al llegar">
+        </div>
+        @*<div class="col-12">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    Check me out
+                </label>
+            </div>
+        </div>*@
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+    </form>
+</main>
+
