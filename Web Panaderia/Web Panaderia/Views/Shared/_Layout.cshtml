@@ -13,17 +13,14 @@
         <div class="container">
             @*@Html.ActionLink("Nombre de la aplicación", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
             <a href="@Url.Action("Index", "Home")" class="navbar-brand">
-                <img src="C:\Users\SRV\Desktop\DaVinci\Cuatrimestre 6\Plataformas de Desarrollo\Mulitmedia\LaCentral.jpg" alt="Logo de la aplicación" />
+                <img src="~/Img/LaCentra.png" alt="Logo de la aplicación" />
             </a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Alternar navegación" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
-                <ul class="navbar-nav flex-grow-1">
-                    <li>@Html.ActionLink("Index", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+            <div class="collapse navbar-collapse d-sm-inline-flex justify-content-end">
+                <ul class="navbar-nav">
                     <li>@Html.ActionLink("Login", "Login", "Home", new { area = "" }, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("Register", "Register", "Home", new { area = "" }, new { @class = "nav-link" })</li>
                 </ul>
