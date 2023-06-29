@@ -163,6 +163,11 @@
     <Content Include="Img\LaCentra.ico" />
     <Content Include="Img\LaCentra.jpg" />
     <Content Include="Img\LaCentra.png" />
+    <Content Include="Img\panaderia.jpg" />
+    <Content Include="Img\panes-removebg-preview.png" />
+    <Content Include="Img\panes.jpg" />
+    <Content Include="Img\pastelera.jpg" />
+    <Content Include="Img\sanduche.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />

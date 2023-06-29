@@ -11,14 +11,21 @@
 <body>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
         <div class="container">
-            @*@Html.ActionLink("Nombre de la aplicación", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
             <a href="@Url.Action("Index", "Home")" class="navbar-brand">
-                <img src="~/Img/LaCentra.png" alt="Logo de la aplicación" />
+                <img src="~/Img/LaCentra.png" alt="Logo de la aplicación" style="width: 40px; margin-right: 400px; margin-left: 13px; 
+                    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);" onmouseover="this.style.boxShadow='5px 5px 5px white';" 
+                    onmouseout="this.style.boxShadow='5px 5px 5px rgba(0, 0, 0, 0.5)';"  />
             </a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Alternar navegación" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="d-flex justify-content-center">
+                <form class="d-flex justify-content-center align-items-center" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
             <div class="collapse navbar-collapse d-sm-inline-flex justify-content-end">
                 <ul class="navbar-nav">
                     <li>@Html.ActionLink("Login", "Login", "Home", new { area = "" }, new { @class = "nav-link" })</li>
@@ -27,6 +34,7 @@
             </div>
         </div>
     </nav>
+
     <div class="container body-content">
         @RenderBody()
         <hr />
